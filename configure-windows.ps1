@@ -28,3 +28,6 @@ Set-Key "HKLM:\Software\Microsoft\WindowsUpdate\UX\Settings" "UxOption" 1
 ## Disable P2P Update downlods outside of local network
 Set-Key "HKLM:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization" "SystemSettingsDownloadMode" 3
 Set-Key "HKLM:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" "DODownloadMode" 1
+
+# Power settings
+powercfg -setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  # High performance
